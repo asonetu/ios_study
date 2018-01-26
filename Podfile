@@ -4,5 +4,5 @@ use_frameworks!
 
 target 'between' do
     pod 'Alamofire', '~> 4.6'
- 	pod 'RealmSwift', '~> 3.1'
+    pod 'RealmSwift', '~> 3.1'
 end
