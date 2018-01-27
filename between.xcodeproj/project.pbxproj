@@ -16,6 +16,7 @@
 		834C9BC620102AD3004086C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834C9BC420102AD3004086C4 /* LaunchScreen.storyboard */; };
 		834C9BD120102AD3004086C4 /* betweenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C9BD020102AD3004086C4 /* betweenTests.swift */; };
 		834C9BDC20102AD3004086C4 /* betweenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C9BDB20102AD3004086C4 /* betweenUITests.swift */; };
+		83EB029D201CC8100001DBC3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB029C201CC8100001DBC3 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		834C9BD720102AD3004086C4 /* betweenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = betweenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		834C9BDB20102AD3004086C4 /* betweenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = betweenUITests.swift; sourceTree = "<group>"; };
 		834C9BDD20102AD3004086C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83EB029C201CC8100001DBC3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EA9C1A5C8CE9111BC465A3A5 /* Pods-between.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-between.debug.xcconfig"; path = "Pods/Target Support Files/Pods-between/Pods-between.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,7 @@
 		834C9BB820102AD3004086C4 /* between */ = {
 			isa = PBXGroup;
 			children = (
+				83EB029C201CC8100001DBC3 /* LoginViewController.swift */,
 				834C9BB920102AD3004086C4 /* AppDelegate.swift */,
 				834C9BBB20102AD3004086C4 /* FirstViewController.swift */,
 				834C9BBD20102AD3004086C4 /* SecondViewController.swift */,
@@ -347,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EB029D201CC8100001DBC3 /* LoginViewController.swift in Sources */,
 				834C9BBE20102AD3004086C4 /* SecondViewController.swift in Sources */,
 				834C9BBA20102AD3004086C4 /* AppDelegate.swift in Sources */,
 				834C9BBC20102AD3004086C4 /* FirstViewController.swift in Sources */,
