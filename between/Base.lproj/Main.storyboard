@@ -222,7 +222,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Lbd-oC-s8t" kind="relationship" relationship="rootViewController" id="spa-MO-UFs"/>
+                        <segue destination="d2U-eP-V74" kind="relationship" relationship="rootViewController" id="ggI-cH-cmT"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NvQ-Dc-o8R" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -284,7 +284,60 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pcZ-jn-Xxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1562.4000000000001" y="-0.44977511244377816"/>
+            <point key="canvasLocation" x="-1198" y="-446"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="V4Y-96-bGP">
+            <objects>
+                <viewController id="d2U-eP-V74" customClass="LoginViewController" customModule="between" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xM7-nd-zOf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDX-yk-4q1">
+                                <rect key="frame" x="139" y="161" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="암호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A1Z-1f-j9m">
+                                <rect key="frame" x="139" y="227" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bx-hs-MqH">
+                                <rect key="frame" x="127" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="로그인"/>
+                                <connections>
+                                    <action selector="onClickLoginButton:" destination="d2U-eP-V74" eventType="touchUpInside" id="L9Z-Hq-9vz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pa0-TK-9Sb">
+                                <rect key="frame" x="209" y="318" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="회원가입"/>
+                                <connections>
+                                    <segue destination="Lbd-oC-s8t" kind="show" id="BGM-RV-OLe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="sOA-Kb-MUo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y07-TV-zuY"/>
+                    <connections>
+                        <outlet property="email" destination="iDX-yk-4q1" id="xPJ-Rf-aVF"/>
+                        <outlet property="password" destination="A1Z-1f-j9m" id="G9t-Cp-TLW"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="loginSuccess" id="FY8-Ik-PoK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="smU-TE-JwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1919.5" y="-15.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rCN-f2-PQC">
@@ -316,7 +369,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cO5-j2-ROb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-743" y="0.0"/>
+            <point key="canvasLocation" x="-467" y="-445"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -342,6 +395,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Nd6-rI-vXU"/>
+        <segue reference="FY8-Ik-PoK"/>
     </inferredMetricsTieBreakers>
 </document>

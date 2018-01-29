@@ -17,6 +17,7 @@
 		834C9BD120102AD3004086C4 /* betweenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C9BD020102AD3004086C4 /* betweenTests.swift */; };
 		834C9BDC20102AD3004086C4 /* betweenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C9BDB20102AD3004086C4 /* betweenUITests.swift */; };
 		83EB029D201CC8100001DBC3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB029C201CC8100001DBC3 /* LoginViewController.swift */; };
+		83EB029F201F865C0001DBC3 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB029E201F865C0001DBC3 /* LoginResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		834C9BDB20102AD3004086C4 /* betweenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = betweenUITests.swift; sourceTree = "<group>"; };
 		834C9BDD20102AD3004086C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83EB029C201CC8100001DBC3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		83EB029E201F865C0001DBC3 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		EA9C1A5C8CE9111BC465A3A5 /* Pods-between.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-between.debug.xcconfig"; path = "Pods/Target Support Files/Pods-between/Pods-between.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,7 @@
 				834C9BC220102AD3004086C4 /* Assets.xcassets */,
 				834C9BC420102AD3004086C4 /* LaunchScreen.storyboard */,
 				834C9BC720102AD3004086C4 /* Info.plist */,
+				83EB029E201F865C0001DBC3 /* LoginResponse.swift */,
 			);
 			path = between;
 			sourceTree = "<group>";
@@ -311,14 +314,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-between/Pods-between-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -354,6 +365,7 @@
 				834C9BBE20102AD3004086C4 /* SecondViewController.swift in Sources */,
 				834C9BBA20102AD3004086C4 /* AppDelegate.swift in Sources */,
 				834C9BBC20102AD3004086C4 /* FirstViewController.swift in Sources */,
+				83EB029F201F865C0001DBC3 /* LoginResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
