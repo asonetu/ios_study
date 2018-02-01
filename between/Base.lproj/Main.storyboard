@@ -229,10 +229,10 @@
             </objects>
             <point key="canvasLocation" x="-2650" y="-14"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="hVr-kd-mBf">
             <objects>
-                <viewController id="Lbd-oC-s8t" sceneMemberID="viewController">
+                <viewController id="Lbd-oC-s8t" customClass="SignUpViewController" customModule="between" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Tu-QG-BG9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -241,10 +241,11 @@
                                 <rect key="frame" x="100" y="567" width="175" height="30"/>
                                 <state key="normal" title="회원가입"/>
                                 <connections>
+                                    <action selector="signUpAction:" destination="Lbd-oC-s8t" eventType="touchUpInside" id="Liw-3f-wqu"/>
                                     <segue destination="b6r-i2-c5L" kind="show" id="rzE-X8-4pl"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zIx-3l-R43">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zIx-3l-R43" userLabel="My Email Text Field">
                                 <rect key="frame" x="72" y="189" width="230" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -281,6 +282,11 @@
                         <viewLayoutGuide key="safeArea" id="Nlz-CK-wi0"/>
                     </view>
                     <navigationItem key="navigationItem" id="sZW-Ut-XMD"/>
+                    <connections>
+                        <outlet property="coupleEmailTextField" destination="vdY-Qc-Xca" id="8FC-0L-zqO"/>
+                        <outlet property="myEmailTextField" destination="zIx-3l-R43" id="TGU-Dx-EMv"/>
+                        <outlet property="passwordTextField" destination="hCp-I7-hXL" id="ur9-gr-Ize"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pcZ-jn-Xxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,7 +327,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="회원가입"/>
                                 <connections>
-                                    <segue destination="Lbd-oC-s8t" kind="show" id="BGM-RV-OLe"/>
+                                    <segue destination="Lbd-oC-s8t" kind="show" id="mPO-no-iqm"/>
                                 </connections>
                             </button>
                         </subviews>

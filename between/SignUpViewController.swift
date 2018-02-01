@@ -10,6 +10,10 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var coupleEmailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var myEmailTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +25,16 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func signUpAction(_ sender: Any) {
+        
+         if let myEmail = self.myEmailTextField.text,
+            let myPassword = self.passwordTextField.text,
+            let coupleEmail = self.coupleEmailTextField.text{
+            
+            print("내 이메일 :\(myEmail)")
+            print("비밀번호 :\(myPassword)")
+            print("상대방 :\(coupleEmail)")
+        
+        }
     }
-    */
-
 }
