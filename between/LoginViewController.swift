@@ -63,7 +63,6 @@ class LoginViewController: UIViewController {
                 let loginResultCode = loginResponse?.data?.loginResultCode
                 print("loginResultCode: \(String(describing: loginResultCode))")
                 
-                
                 if(loginResultCode == "SUCCESS") {
                     self.performSegue(withIdentifier: "loginSuccess", sender: nil)
                     
@@ -79,7 +78,6 @@ class LoginViewController: UIViewController {
                 } else if(loginResultCode == "WAITING") {
                     Toast(text: "상대방을 기다리는 중입니다.").show()
                 }
-                
                 /*
                  let user = loginResponse?.data?.user
                  print("userId: \(String(describing: user?.userId))")

@@ -241,7 +241,7 @@
                                 <rect key="frame" x="100" y="567" width="175" height="30"/>
                                 <state key="normal" title="회원가입"/>
                                 <connections>
-                                    <segue destination="b6r-i2-c5L" kind="show" id="NiY-lk-dhK"/>
+                                    <segue destination="b6r-i2-c5L" kind="show" id="rzE-X8-4pl"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zIx-3l-R43">
@@ -284,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pcZ-jn-Xxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1198" y="-446"/>
+            <point key="canvasLocation" x="-777" y="-770"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="V4Y-96-bGP">
@@ -369,7 +369,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cO5-j2-ROb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-467" y="-445"/>
+            <point key="canvasLocation" x="201" y="-769"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

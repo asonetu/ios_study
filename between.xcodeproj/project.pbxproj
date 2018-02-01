@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BBBA2922022EA7E00280985 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBBA2912022EA7E00280985 /* SignUpViewController.swift */; };
 		6E5FB29F580C89E3B65E60AF /* Pods_between.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7724894B2A2936BD67DC584B /* Pods_between.framework */; };
 		834C9BBA20102AD3004086C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C9BB920102AD3004086C4 /* AppDelegate.swift */; };
 		834C9BBC20102AD3004086C4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C9BBB20102AD3004086C4 /* FirstViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		2DE9D59AC8EB7EF02CB56FA1 /* Pods-between.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-between.release.xcconfig"; path = "Pods/Target Support Files/Pods-between/Pods-between.release.xcconfig"; sourceTree = "<group>"; };
+		5BBBA2912022EA7E00280985 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7724894B2A2936BD67DC584B /* Pods_between.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_between.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		834C9BB620102AD3004086C4 /* between.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = between.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834C9BB920102AD3004086C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				834C9BC420102AD3004086C4 /* LaunchScreen.storyboard */,
 				834C9BC720102AD3004086C4 /* Info.plist */,
 				83EB029E201F865C0001DBC3 /* LoginResponse.swift */,
+				5BBBA2912022EA7E00280985 /* SignUpViewController.swift */,
 			);
 			path = between;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BBBA2922022EA7E00280985 /* SignUpViewController.swift in Sources */,
 				83EB029D201CC8100001DBC3 /* LoginViewController.swift in Sources */,
 				834C9BBE20102AD3004086C4 /* SecondViewController.swift in Sources */,
 				834C9BBA20102AD3004086C4 /* AppDelegate.swift in Sources */,
