@@ -237,6 +237,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zIx-3l-R43" userLabel="My Email Text Field">
+                                <rect key="frame" x="40" y="189" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hCp-I7-hXL">
+                                <rect key="frame" x="40" y="269" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="상대방 이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vdY-Qc-Xca">
+                                <rect key="frame" x="40" y="349" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxW-2B-vtb">
                                 <rect key="frame" x="100" y="567" width="175" height="30"/>
                                 <state key="normal" title="회원가입"/>
@@ -245,39 +263,26 @@
                                     <segue destination="b6r-i2-c5L" kind="show" id="rzE-X8-4pl"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zIx-3l-R43" userLabel="My Email Text Field">
-                                <rect key="frame" x="72" y="189" width="230" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hCp-I7-hXL">
-                                <rect key="frame" x="72" y="269" width="230" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="상대방 이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vdY-Qc-Xca">
-                                <rect key="frame" x="72" y="384" width="230" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Nlz-CK-wi0" firstAttribute="trailing" secondItem="hxW-2B-vtb" secondAttribute="trailing" constant="100" id="535-Rt-9Di"/>
-                            <constraint firstItem="vdY-Qc-Xca" firstAttribute="top" secondItem="hCp-I7-hXL" secondAttribute="bottom" constant="85" id="6Zg-Oi-Qc2" userLabel="Round Style Text Field.top = Round Style Text Field.bottom + 50"/>
-                            <constraint firstItem="Nlz-CK-wi0" firstAttribute="bottom" secondItem="hxW-2B-vtb" secondAttribute="bottom" constant="70" id="CNl-V6-OY0"/>
-                            <constraint firstItem="zIx-3l-R43" firstAttribute="trailing" secondItem="vdY-Qc-Xca" secondAttribute="trailing" id="Dg7-qn-aKP"/>
-                            <constraint firstItem="zIx-3l-R43" firstAttribute="top" secondItem="Nlz-CK-wi0" secondAttribute="top" constant="125" id="Er9-py-nny"/>
-                            <constraint firstItem="zIx-3l-R43" firstAttribute="leading" secondItem="hCp-I7-hXL" secondAttribute="leading" id="IkR-bb-tHM"/>
-                            <constraint firstItem="zIx-3l-R43" firstAttribute="centerX" secondItem="hxW-2B-vtb" secondAttribute="centerX" id="Qgl-Zf-tGu"/>
-                            <constraint firstItem="zIx-3l-R43" firstAttribute="leading" secondItem="Nlz-CK-wi0" secondAttribute="leading" constant="72" id="U3G-3l-LsU"/>
-                            <constraint firstItem="zIx-3l-R43" firstAttribute="trailing" secondItem="hCp-I7-hXL" secondAttribute="trailing" id="hlz-it-stk"/>
-                            <constraint firstItem="hxW-2B-vtb" firstAttribute="leading" secondItem="Nlz-CK-wi0" secondAttribute="leading" constant="100" id="kIo-EG-Ch3"/>
-                            <constraint firstItem="hCp-I7-hXL" firstAttribute="top" secondItem="zIx-3l-R43" secondAttribute="bottom" constant="50" id="mrd-gw-NOc"/>
-                            <constraint firstItem="zIx-3l-R43" firstAttribute="leading" secondItem="vdY-Qc-Xca" secondAttribute="leading" id="tXQ-8C-kLq"/>
+                            <constraint firstItem="vdY-Qc-Xca" firstAttribute="centerX" secondItem="5Tu-QG-BG9" secondAttribute="centerX" id="1qB-H0-zfe"/>
+                            <constraint firstItem="hCp-I7-hXL" firstAttribute="centerX" secondItem="5Tu-QG-BG9" secondAttribute="centerX" id="2CF-4X-p8t"/>
+                            <constraint firstItem="hxW-2B-vtb" firstAttribute="leading" secondItem="Nlz-CK-wi0" secondAttribute="leading" constant="100" id="35G-SI-eah"/>
+                            <constraint firstItem="vdY-Qc-Xca" firstAttribute="top" secondItem="hCp-I7-hXL" secondAttribute="bottom" constant="50" id="56A-gE-lJB"/>
+                            <constraint firstItem="zIx-3l-R43" firstAttribute="top" secondItem="Nlz-CK-wi0" secondAttribute="top" constant="125" id="BIP-w8-RJf"/>
+                            <constraint firstItem="Nlz-CK-wi0" firstAttribute="trailing" secondItem="hCp-I7-hXL" secondAttribute="trailing" constant="40" id="BY5-2X-JzY"/>
+                            <constraint firstItem="hCp-I7-hXL" firstAttribute="top" secondItem="zIx-3l-R43" secondAttribute="bottom" constant="50" id="Gtp-0P-7A2"/>
+                            <constraint firstItem="zIx-3l-R43" firstAttribute="centerX" secondItem="5Tu-QG-BG9" secondAttribute="centerX" id="HXO-He-rhN"/>
+                            <constraint firstItem="Nlz-CK-wi0" firstAttribute="bottom" secondItem="hxW-2B-vtb" secondAttribute="bottom" constant="70" id="J6e-tt-ssM"/>
+                            <constraint firstItem="Nlz-CK-wi0" firstAttribute="trailing" secondItem="vdY-Qc-Xca" secondAttribute="trailing" constant="40" id="JtH-Wl-DQb"/>
+                            <constraint firstItem="Nlz-CK-wi0" firstAttribute="trailing" secondItem="zIx-3l-R43" secondAttribute="trailing" constant="40" id="LHM-VX-YDP"/>
+                            <constraint firstItem="zIx-3l-R43" firstAttribute="leading" secondItem="Nlz-CK-wi0" secondAttribute="leading" constant="40" id="ZjN-SL-X3j"/>
+                            <constraint firstItem="hCp-I7-hXL" firstAttribute="leading" secondItem="Nlz-CK-wi0" secondAttribute="leading" constant="40" id="dSv-Om-kg3"/>
+                            <constraint firstItem="hCp-I7-hXL" firstAttribute="top" secondItem="zIx-3l-R43" secondAttribute="bottom" constant="50" id="gXf-fG-RGO"/>
+                            <constraint firstItem="hxW-2B-vtb" firstAttribute="centerX" secondItem="5Tu-QG-BG9" secondAttribute="centerX" id="hE5-Yw-Ijh"/>
+                            <constraint firstItem="Nlz-CK-wi0" firstAttribute="trailing" secondItem="hxW-2B-vtb" secondAttribute="trailing" constant="100" id="iCN-nW-dxE"/>
+                            <constraint firstItem="vdY-Qc-Xca" firstAttribute="leading" secondItem="Nlz-CK-wi0" secondAttribute="leading" constant="40" id="r5j-Ej-LuY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nlz-CK-wi0"/>
                     </view>
