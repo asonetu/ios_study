@@ -29,7 +29,12 @@
 		<key>NSExceptionDomains</key>
 		<dict>
 			<key>studybook.co.kr</key>
-			<string></string>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
 		</dict>
 		<key>New item</key>
 		<string></string>
