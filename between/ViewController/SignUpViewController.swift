@@ -52,7 +52,22 @@ class SignUpViewController: UIViewController {
             let signUpUrl = "http://studybook.co.kr:8080/between/v1/auth/signup"
             
             Alamofire.request(signUpUrl, method: .post, parameters: parameters,encoding: JSONEncoding.default)
+                .responseObject{(response: DataResponse<LoginResponse>) in
+            let signUpResponse = response.result.value
+                    print("responseCode: \(String(describing: signUpResponse?.responseCode))")
+                    print("message: \(String(describing: signUpResponse?.message))")
+                    let loginResultCode = signUpResponse?.data?.loginResultCode
+                    print("loginResultCode: \(String(describing: loginResultCode))")
             
+            }
+//                .responseObject(completionHandler: { (DataResponse<SignUpResponse>) in
+//
+//                    let SignUpResponse = response.result.value
+//                    print("responseCode: \(String(describing: SignUpResponse?.responseCode))")
+//                    print("message: \(String(describing: SignUpResponse?.message))")
+//                    let loginResultCode = SignUpResponse?.data?.loginResultCode
+//                    print("loginResultCode: \(String(describing: loginResultCode))")
+//                })
         }
          else{
             Toast(text: "모든 정보를 입력하세요.").show()
