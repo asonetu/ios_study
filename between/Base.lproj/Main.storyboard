@@ -307,10 +307,10 @@
             </objects>
             <point key="canvasLocation" x="-777" y="-770"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="V4Y-96-bGP">
             <objects>
-                <viewController id="d2U-eP-V74" customClass="LoginViewController" customModule="between" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="d2U-eP-V74" customClass="SignInViewController" customModule="between" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xM7-nd-zOf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

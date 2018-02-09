@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B3497F820244D520056C285 /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3497F720244D520056C285 /* SignUpResponse.swift */; };
 		5B3497FA20244DFB0056C285 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3497F920244DFB0056C285 /* User.swift */; };
 		5BBBA2922022EA7E00280985 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBBA2912022EA7E00280985 /* SignUpViewController.swift */; };
 		6E5FB29F580C89E3B65E60AF /* Pods_between.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7724894B2A2936BD67DC584B /* Pods_between.framework */; };
+		8340DE27202DF4000082D3F8 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340DE26202DF4000082D3F8 /* NetworkResponse.swift */; };
+		8340DE2E202DF92F0082D3F8 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340DE2D202DF92F0082D3F8 /* NetworkConstant.swift */; };
+		8340DE31202DFBA00082D3F8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340DE30202DFBA00082D3F8 /* NetworkManager.swift */; };
+		8340DE33202DFBF90082D3F8 /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340DE32202DFBF90082D3F8 /* NetworkUtil.swift */; };
+		8340DE35202DFD220082D3F8 /* NetworkURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340DE34202DFD220082D3F8 /* NetworkURL.swift */; };
+		8340DE38202E0D980082D3F8 /* CommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340DE37202E0D980082D3F8 /* CommonUtil.swift */; };
 		834C9BBA20102AD3004086C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C9BB920102AD3004086C4 /* AppDelegate.swift */; };
 		834C9BBC20102AD3004086C4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C9BBB20102AD3004086C4 /* FirstViewController.swift */; };
 		834C9BBE20102AD3004086C4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C9BBD20102AD3004086C4 /* SecondViewController.swift */; };
@@ -19,8 +24,8 @@
 		834C9BC620102AD3004086C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834C9BC420102AD3004086C4 /* LaunchScreen.storyboard */; };
 		834C9BD120102AD3004086C4 /* betweenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C9BD020102AD3004086C4 /* betweenTests.swift */; };
 		834C9BDC20102AD3004086C4 /* betweenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C9BDB20102AD3004086C4 /* betweenUITests.swift */; };
-		83EB029D201CC8100001DBC3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB029C201CC8100001DBC3 /* LoginViewController.swift */; };
-		83EB029F201F865C0001DBC3 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB029E201F865C0001DBC3 /* LoginResponse.swift */; };
+		83EB029D201CC8100001DBC3 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB029C201CC8100001DBC3 /* SignInViewController.swift */; };
+		83EB029F201F865C0001DBC3 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB029E201F865C0001DBC3 /* LoginResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +47,15 @@
 
 /* Begin PBXFileReference section */
 		2DE9D59AC8EB7EF02CB56FA1 /* Pods-between.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-between.release.xcconfig"; path = "Pods/Target Support Files/Pods-between/Pods-between.release.xcconfig"; sourceTree = "<group>"; };
-		5B3497F720244D520056C285 /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
 		5B3497F920244DFB0056C285 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5BBBA2912022EA7E00280985 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7724894B2A2936BD67DC584B /* Pods_between.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_between.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8340DE26202DF4000082D3F8 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		8340DE2D202DF92F0082D3F8 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		8340DE30202DFBA00082D3F8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8340DE32202DFBF90082D3F8 /* NetworkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
+		8340DE34202DFD220082D3F8 /* NetworkURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkURL.swift; sourceTree = "<group>"; };
+		8340DE37202E0D980082D3F8 /* CommonUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtil.swift; sourceTree = "<group>"; };
 		834C9BB620102AD3004086C4 /* between.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = between.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834C9BB920102AD3004086C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		834C9BBB20102AD3004086C4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -60,8 +70,8 @@
 		834C9BD720102AD3004086C4 /* betweenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = betweenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		834C9BDB20102AD3004086C4 /* betweenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = betweenUITests.swift; sourceTree = "<group>"; };
 		834C9BDD20102AD3004086C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83EB029C201CC8100001DBC3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		83EB029E201F865C0001DBC3 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		83EB029C201CC8100001DBC3 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		83EB029E201F865C0001DBC3 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
 		EA9C1A5C8CE9111BC465A3A5 /* Pods-between.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-between.debug.xcconfig"; path = "Pods/Target Support Files/Pods-between/Pods-between.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,9 +104,7 @@
 		5B3497F620244D120056C285 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5BBBA2912022EA7E00280985 /* SignUpViewController.swift */,
 				834C9BBB20102AD3004086C4 /* FirstViewController.swift */,
-				83EB029C201CC8100001DBC3 /* LoginViewController.swift */,
 				834C9BBD20102AD3004086C4 /* SecondViewController.swift */,
 			);
 			path = ViewController;
@@ -108,6 +116,62 @@
 				7724894B2A2936BD67DC584B /* Pods_between.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8340DE25202DF3ED0082D3F8 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				8340DE2B202DF54C0082D3F8 /* viewController */,
+				8340DE28202DF48F0082D3F8 /* model */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		8340DE28202DF48F0082D3F8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5B3497F920244DFB0056C285 /* User.swift */,
+				83EB029E201F865C0001DBC3 /* LoginResult.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		8340DE29202DF49E0082D3F8 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				8340DE36202E0D8C0082D3F8 /* util */,
+				8340DE2F202DFB870082D3F8 /* network */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		8340DE2B202DF54C0082D3F8 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				83EB029C201CC8100001DBC3 /* SignInViewController.swift */,
+				5BBBA2912022EA7E00280985 /* SignUpViewController.swift */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		8340DE2F202DFB870082D3F8 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				8340DE26202DF4000082D3F8 /* NetworkResponse.swift */,
+				8340DE2D202DF92F0082D3F8 /* NetworkConstant.swift */,
+				8340DE30202DFBA00082D3F8 /* NetworkManager.swift */,
+				8340DE32202DFBF90082D3F8 /* NetworkUtil.swift */,
+				8340DE34202DFD220082D3F8 /* NetworkURL.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		8340DE36202E0D8C0082D3F8 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				8340DE37202E0D980082D3F8 /* CommonUtil.swift */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 		834C9BAD20102AD3004086C4 = {
@@ -135,15 +199,14 @@
 		834C9BB820102AD3004086C4 /* between */ = {
 			isa = PBXGroup;
 			children = (
+				8340DE29202DF49E0082D3F8 /* common */,
+				8340DE25202DF3ED0082D3F8 /* auth */,
 				5B3497F620244D120056C285 /* ViewController */,
 				834C9BB920102AD3004086C4 /* AppDelegate.swift */,
 				834C9BBF20102AD3004086C4 /* Main.storyboard */,
 				834C9BC220102AD3004086C4 /* Assets.xcassets */,
 				834C9BC420102AD3004086C4 /* LaunchScreen.storyboard */,
 				834C9BC720102AD3004086C4 /* Info.plist */,
-				83EB029E201F865C0001DBC3 /* LoginResponse.swift */,
-				5B3497F720244D520056C285 /* SignUpResponse.swift */,
-				5B3497F920244DFB0056C285 /* User.swift */,
 			);
 			path = between;
 			sourceTree = "<group>";
@@ -334,8 +397,6 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -344,8 +405,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,14 +437,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8340DE35202DFD220082D3F8 /* NetworkURL.swift in Sources */,
 				5BBBA2922022EA7E00280985 /* SignUpViewController.swift in Sources */,
-				83EB029D201CC8100001DBC3 /* LoginViewController.swift in Sources */,
-				5B3497F820244D520056C285 /* SignUpResponse.swift in Sources */,
+				83EB029D201CC8100001DBC3 /* SignInViewController.swift in Sources */,
+				8340DE38202E0D980082D3F8 /* CommonUtil.swift in Sources */,
+				8340DE31202DFBA00082D3F8 /* NetworkManager.swift in Sources */,
 				834C9BBE20102AD3004086C4 /* SecondViewController.swift in Sources */,
+				8340DE27202DF4000082D3F8 /* NetworkResponse.swift in Sources */,
 				5B3497FA20244DFB0056C285 /* User.swift in Sources */,
 				834C9BBA20102AD3004086C4 /* AppDelegate.swift in Sources */,
 				834C9BBC20102AD3004086C4 /* FirstViewController.swift in Sources */,
-				83EB029F201F865C0001DBC3 /* LoginResponse.swift in Sources */,
+				8340DE2E202DF92F0082D3F8 /* NetworkConstant.swift in Sources */,
+				8340DE33202DFBF90082D3F8 /* NetworkUtil.swift in Sources */,
+				83EB029F201F865C0001DBC3 /* LoginResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

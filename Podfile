@@ -4,7 +4,7 @@ use_frameworks!
 
 target 'between' do
     pod 'Alamofire', '~> 4.6'
-    pod 'RealmSwift', '~> 3.1'
+    #pod 'RealmSwift', '~> 3.1' DB 사용전까지 주석처리
     pod 'ObjectMapper', '~> 3.1'
     pod 'AlamofireObjectMapper', '~> 5.0'
     pod 'Toaster', '~> 2.1'
