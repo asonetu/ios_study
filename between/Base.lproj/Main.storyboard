@@ -245,25 +245,25 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="유저 이름" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zIx-3l-R43" userLabel="User Name Text Field">
-                                <rect key="frame" x="40" y="189" width="334" height="30"/>
+                                <rect key="frame" x="40" y="145" width="334" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="내 이메일" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hCp-I7-hXL">
-                                <rect key="frame" x="40" y="269" width="334" height="30"/>
+                                <rect key="frame" x="40" y="225" width="334" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀 번호" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vdY-Qc-Xca">
-                                <rect key="frame" x="40" y="349" width="334" height="30"/>
+                                <rect key="frame" x="40" y="305" width="334" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="상대방 이메일" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jd6-lk-RNl">
-                                <rect key="frame" x="40" y="429" width="334" height="30"/>
+                                <rect key="frame" x="40" y="385" width="334" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -300,7 +300,7 @@
                         <outlet property="userEmailTextField" destination="hCp-I7-hXL" id="qPa-ib-Uus"/>
                         <outlet property="userNameTextField" destination="zIx-3l-R43" id="RFk-f4-zRs"/>
                         <outlet property="userPasswordTextField" destination="vdY-Qc-Xca" id="ErG-fk-8mh"/>
-                        <segue destination="b6r-i2-c5L" kind="show" identifier="goProfileIdentifier" id="DgV-XN-xDY"/>
+                        <segue destination="d2U-eP-V74" kind="show" identifier="goSignInIdentifier" id="PAX-al-QYg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pcZ-jn-Xxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -417,5 +417,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="FY8-Ik-PoK"/>
+        <segue reference="PAX-al-QYg"/>
     </inferredMetricsTieBreakers>
 </document>

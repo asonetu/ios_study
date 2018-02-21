@@ -15,7 +15,6 @@ import KeychainAccess
 class SignInViewController: UIViewController {
     
     @IBOutlet weak var email: UITextField!
-    
     @IBOutlet weak var password: UITextField!
     
     override func viewDidLoad() {
