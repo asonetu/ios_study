@@ -28,8 +28,9 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        signUpButton.layer.cornerRadius = UtilConstant.buttonRadius
         
-        signUpButton.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
 
