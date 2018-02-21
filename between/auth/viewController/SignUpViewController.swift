@@ -42,12 +42,14 @@ class SignUpViewController: UIViewController {
         print("내 이름 :\(userName)")
         print("내 이메일 :\(userEmail)")
         print("비밀번호 :\(userPassword)")
-        print("상대방 :\(coupleEmail)")
+        print("상대방 이메일 :\(coupleEmail)")
         
         if (userName.isEmpty || userEmail.isEmpty || userPassword.isEmpty || coupleEmail.isEmpty) {
             Toast(text: "모든 정보를 입력하세요.").show()
-        } else if (!isMyEmailAddressValid || !isCoupleEmailAddressValid) {
-            Toast(text: "이메일을 확인하세요.").show()
+        } else if (!isMyEmailAddressValid) {
+             Toast(text: "나의 이메일을 확인하세요.").show()
+        } else if (!isCoupleEmailAddressValid) {
+            Toast(text: "상대방의 이메일을 확인하세요.").show()
         } else {
             let param: Parameters = [
                 "userName" : userName,

@@ -13,12 +13,14 @@ import Toaster
 import KeychainAccess
 
 class SignInViewController: UIViewController {
+    @IBOutlet weak var roundedCornerBtn: UIButton!
     
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        roundedCornerBtn.layer.cornerRadius = 5
         // Do any additional setup after loading the view, typically from a nib.
         
         let keychain = Keychain(service: "com.ios.study.between")
