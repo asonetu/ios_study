@@ -19,6 +19,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         self.profileImageView.layer.cornerRadius = self.profileImageView.frame.width / 2;
+        self.profileImageView.clipsToBounds = true;
         
         let keychain = Keychain(service: "com.ios.study.between")
         let userId = keychain["userId"]

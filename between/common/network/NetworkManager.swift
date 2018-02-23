@@ -47,7 +47,7 @@ class NetworkManager {
                 print("responseCode: \(String(describing: responseData?.responseCode))");
                 print("message: \(String(describing: responseData?.message))");
                 
-                let returnData:T? = (responseData?.data)!;
+                let returnData:T? = (responseData?.data)!; // 옵셔널 강제추출 처리
                 callback(returnData);
         }
     }
