@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 class User: Mappable {
-    var userId: String?
+    var userId: Int?
     var email: String?
     var userName: String?
     var password: String?
@@ -18,6 +18,7 @@ class User: Mappable {
     var statusCode: String?
     var createDate: Date?
     var nowDate: Date?
+    var profileFileId: Int?
     
     required init?(map: Map){
         
@@ -32,5 +33,6 @@ class User: Mappable {
         statusCode <- map["statusCode"]
         createDate <- map["createDate"]
         nowDate <- map["nowDate"]
+        profileFileId <- map["profileFileId"]
     }
 }

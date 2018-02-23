@@ -64,7 +64,11 @@ class SignInViewController: UIViewController {
                 keychain["password"] = self.password.text
                 
                 let user = result?.user;
-                keychain["userId"] = user?.userId
+                print("userId: \(String(describing: user?.userId))")
+                print("email: \(String(describing: user?.email))")
+                
+                let userId:Int = (user?.userId)!;
+                keychain["userId"] = String(userId);
                 
             } else if(loginResultCode == "INVALID_ACCOUNT" || loginResultCode == "INVALID_PASSWORD") {
                 Toast(text: "이메일 주소, 암호를 확인해주세요.").show()
