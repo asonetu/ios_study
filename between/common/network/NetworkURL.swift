@@ -11,4 +11,6 @@ import Foundation
 class NetworkURL {
     static let signin = "/auth/signin";
     static let signup = "/auth/signup";
+    static let getUserProfile = "/user/profile";
+    static let downloadUserProfileImage = "/user/profile/image";
 }
